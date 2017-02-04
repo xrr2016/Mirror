@@ -7,5 +7,8 @@ user: LoeiFy
 # issue repo
 repo: Recordum
 
+# multi-author
+authors:
+
 # per page
 per_page: 7
