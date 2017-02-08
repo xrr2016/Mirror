@@ -12,3 +12,6 @@ authors:
 
 # per page
 per_page: 7
+
+#sandbox
+sandbox: true
