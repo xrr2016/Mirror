@@ -4,14 +4,16 @@ title: Mirror
 # github user
 user: LoeiFy
 
-# issue repo
-repo: Recordum
+# issue repository
+repository: Recordum
 
 # multi-author
 authors:
 
-# per page
-per_page: 7
+# token
+# token should be separated by '#'
+# example: 5#c31bffc137f44faf7efc4a84da827g7ca2cfeaa
+token: 5#c21bffc137f44faf7e9c4a84da827f7cc2cfeaa
 
-#sandbox
-sandbox: true
+# posts per page
+perpage: 7
