@@ -20,3 +20,7 @@ token: 5#c21bffc137f44faf7e9c4a84da827f7cc2cfeaa
 
 # posts per page
 perpage: 7
+
+order: CREATED_AT
+
+ignores: "17,13"
