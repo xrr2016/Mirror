@@ -9,12 +9,6 @@
 @import "./comments";
 @import "./footer";
 
-.page > div {
-  margin: 0 auto;
-  max-width: 640px;
-  padding: 0 20px;
-}
-
 .markdown-body {
   font-family: apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,PingFang SC,Microsoft YaHei,sans-serif;
   font-size: 14px;
@@ -22,19 +16,4 @@
   & .highlight {
     font-size: 15px;
   }
-}
-
-.loading body:before {
-  display: none;
-}
-
-body:before {
-  z-index: 5;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 2%;
-  width: 96%;
-  height: 3px;
-  background: #3f4d56;
 }
