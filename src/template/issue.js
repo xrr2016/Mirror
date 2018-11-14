@@ -23,7 +23,7 @@ class Issue {
       id: 'footer',
       innerHTML: `
         &copy; ${(new Date()).getFullYear()} ${title}. Powered by
-        <a href="https://github.com/LoeiFy/Mirror" target="_blank">Mirror</a> .
+        <a href="https://github.com/xrr2017/Mirror" target="_blank">Mirror</a> .
         <a href="https://github.com/${user}/${repository}/issues" target="_blank">Source</a>
       `,
     })

@@ -1,6 +1,7 @@
 import emailIcon from '../svg/email.svg'
 import linkIcon from '../svg/link.svg'
 import githubIcon from '../svg/github.svg'
+import juejinIcon from '../svg/juejin.svg'
 import { $ } from '../util'
 
 class User {
@@ -11,7 +12,7 @@ class User {
 
   get email() {
     const email = this.user.email || this.user.organizationBillingEmail
-    return email ? `<a target="_blank" href="mailto:${email}">${emailIcon}</a>` : ''
+    return email ? `<a target="_blank" title="邮箱" href="mailto:${email}">${emailIcon}</a>` : ''
   }
 
   get website() {
@@ -31,6 +32,10 @@ class User {
     return this.user.bio ? `<p>${this.user.bio}</p>` : ''
   }
 
+  get juejin() {
+    return "https://juejin.im/user/576666b7207703006b1e0f09/posts"
+  }
+
   render(userData) {
     this.user = userData
 
@@ -39,6 +44,7 @@ class User {
       email,
       website,
       bio,
+      juejin,
       container,
     } = this
 
@@ -49,8 +55,8 @@ class User {
       <h1>${user.name || user.login}</h1>
       ${bio}
       <div class="social">
-        <a target="_blank" href="${user.url}">${githubIcon}</a>
-        ${website}
+        <a target="_blank" title="掘金" href="${juejin}">${juejinIcon}</a>
+        <a target="_blank" title="Github" href="${user.url}">${githubIcon}</a>
         ${email}
       </div>
     `)

@@ -12,6 +12,7 @@ const mirror = {
   issues: {},
   issue: {},
   comments: {},
+  zen: ""
 }
 const TPL = new Template(mirror)
 const { perpage } = window.config
@@ -167,4 +168,4 @@ observer.watch({
 router.start()
 
 // eslint-disable-next-line no-console
-console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/LoeiFy/Mirror')
+// console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/LoeiFy/Mirror')

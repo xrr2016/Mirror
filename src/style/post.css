@@ -1,4 +1,8 @@
 #post {
+  width: 98%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 10px;
   & > p {
     font-size: 14px;
     color: #788590;
@@ -34,17 +38,8 @@
   }
 
   & .back {
-    @media (max-width: 800px) {
-      top: 20px;
-      left: 20px;
-    }
-
-    position: absolute;
-    right: 50%;
-    margin-right: 340px;
-    top: 72px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 
     &:hover path {

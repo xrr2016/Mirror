@@ -1,4 +1,7 @@
 .comment-list {
+  width: 98%;
+  max-width: 720px;
+  margin: 0 auto;
   &:before {
     display: block;
     width: 30%;
